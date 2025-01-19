@@ -1,0 +1,36 @@
+.home {
+  margin: 20px;
+}
+.home .projects {
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.home .projects .col {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.home .projects .col:hover {
+  opacity: 0.8;
+}
+.home .educafe,
+.pharmacy,
+.karaoke {
+  margin: 20px;
+}
+.home .educafe ul li {
+  list-style-type: none;
+}
+.home .educafe ul li.completed::before {
+  content: "✔";
+  color: green;
+  padding: 0 7px 0 0;
+}
+.home .educafe ul li.not-completed::before {
+  content: "✔";
+  color: white;
+  padding: 0 7px 0 0;
+}
