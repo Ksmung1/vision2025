@@ -38,7 +38,7 @@ const TreasuryPieChart = ({ items }) => {
       const adjustedRotation = textRotation > 90 && textRotation < 270 ? textRotation - 180 : textRotation;
 
       // Truncate item name to make sure it fits within the segment (max 2 words or 10 characters)
-      let truncatedText = item.name.length > 7 ? item.name.slice(0, 7) + '' : item.name;
+//       let truncatedText = item.name.length > 7 ? item.name.slice(0, 7) + '' : item.name;
 
       return (
         <g key={index}>
@@ -58,8 +58,8 @@ const TreasuryPieChart = ({ items }) => {
             alignmentBaseline="middle"
             transform={`rotate(${adjustedRotation}, ${textX}, ${textY})`}
           >
-            {truncatedText}
-            <tspan fontSize="3" dy="4">{`(${item.percentage / 3.6}%)`}</tspan> {/* Percentage in bracket */}
+           
+            <tspan className='courier-prime' fontSize="4" dy="4">{`(${item.percentage / 3.6}%)`}</tspan> {/* Percentage in bracket */}
           </text>
         </g>
       );

@@ -134,41 +134,13 @@ ul li {
   background-color: #2c3e50; /* Example background color */
   color: white;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   height: 50px;
   cursor: pointer;
 }
 
-.treasury .col:nth-child(1) {
-  background-color: #2ecc71;
-  /* Light Green for Lorem Account */
-}
-
-.treasury .col:nth-child(2) {
-  background-color: #3498db;
-  /* Soft Blue for Crypto */
-}
-
-.treasury .col:nth-child(3) {
-  background-color: #f1c40f;
-  /* Light Yellow for Saving Account */
-}
-
-.treasury .col:nth-child(4) {
-  background-color: #e74c3c;
-  /* Coral for Emergency Funding */
-}
-
-.treasury .col:nth-child(5) {
-  background-color: #9b59b6;
-  /* Light Purple for Dividend Account */
-}
-
-.treasury .col:nth-child(6) {
-  background-color: #e67e22;
-  /* Soft Red for Structure Account */
-}
 .treasury .col p {
   background: inherit;
 }
