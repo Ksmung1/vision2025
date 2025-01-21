@@ -139,10 +139,12 @@ ul li {
   align-items: center;
   height: 50px;
   cursor: pointer;
+  text-align: center;
 }
 
 .treasury .col p {
   background: inherit;
+  text-align: center;
 }
 .pie-chart-container {
   display: flex;
