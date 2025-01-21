@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 
 const Homepage = () => {
   return (
-    <div className='homepage flex colum gap courier-prime'>
+    <div className='homepage flex colum gap '>
           <NavLink to={'/project'}>
           <div className="col project-col">
                     <p>  Project</p>
@@ -14,7 +14,7 @@ const Homepage = () => {
           <NavLink to={'/treasury'}>
           <div className="col treasure-col">
                     <p> OV Treasury</p>
-                    <img src="./images/piggy-bank.png" alt="Golden egg" />
+                    <img style={{width: '19%'}} src="./images/piggy-ban.png" alt="Golden egg" />
           </div>
           </NavLink>
     </div>

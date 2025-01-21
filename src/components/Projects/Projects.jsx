@@ -55,14 +55,14 @@ const Projects = () => {
         <div className="projects flex colum gap mid">
           <div className="col" onClick={() => handleClick('educafe')}>
             <p>Educafe</p>
-            <img src="/images/educafe.png" alt="Educafe" />
+            <img src="/images/books.png" alt="Educafe" />
           </div>
           <div className="col" onClick={() => handleClick('pharmacy')}>
             <p>Pharmacy</p>
-            <img src="/images/pharmacy.png" alt="Pharmacy" />
+            <img src="/images/pharmac.png" alt="Pharmacy" />
           </div>
           <div className="col" onClick={() => handleClick('karaoke')}>
-            <p>Karaoke</p>
+            <p>BeatBox</p>
             <img src="/images/karaoke.png" alt="Karaoke" />
           </div>
         </div>
