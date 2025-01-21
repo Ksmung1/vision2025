@@ -1,36 +1,185 @@
 .home {
   margin: 20px;
 }
-.home .projects {
+.homepage {
   margin: 20px;
-  justify-content: space-between;
+}
+.homepage .col {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+}
+.homepage .project-col {
+  background-color: #2c3e50; /* Dark Blue-Gray */
 }
 
-.home .projects .col {
-  background: white;
+.homepage .project-col:hover {
+  background-color: #34495e; /* Lighter shade on hover */
+}
+
+.homepage .treasure-col {
+  background-color: #8e44ad; /* Deep Purple */
+  transition: background-color 0.3s ease;
+}
+
+.homepage .treasure-col:hover {
+  background-color: #9b59b6; /* Lighter purple on hover */
+}
+.homepage .col p {
+  color: white;
+  font-weight: 600;
+  background-color: inherit;
+  text-decoration: none;
+}
+.homepage .col img {
+  width: 100px;
+  background-color: inherit;
+}
+
+.projects {
+  margin: 20px;
+  justify-content: space-between;
   color: black;
+}
+
+.projects .col {
   padding: 10px;
-  border-radius: 7px;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
 }
-.home .projects .col:hover {
-  opacity: 0.8;
+.projects .col:nth-child(1) {
+  background-color: #1abc9c;
+  transition: background-color 0.3s ease;
 }
-.home .educafe,
+.projects .col:nth-child(1):hover {
+  background-color: #16a085;
+}
+.projects .col:nth-child(2) {
+  background-color: #f39c12;
+  transition: background-color 0.3s ease;
+}
+.projects .col:nth-child(2):hover {
+  background-color: #e67e22;
+}
+.projects .col:nth-child(3) {
+  background-color: #9b59b6;
+  transition: background-color 0.3s ease;
+}
+.projects .col:nth-child(3):hover {
+  background-color: #8e44ad;
+}
+
+.projects .col img {
+  width: 100px;
+  background: inherit;
+}
+.projects .col p {
+  background: inherit;
+  color: white;
+  font-weight: 600;
+}
+..projects .col:hover {
+  opacity: 0.7;
+}
+.project .educafe,
 .pharmacy,
 .karaoke {
   margin: 20px;
 }
-.home .educafe ul li {
+.project-details .educafe-list .educafe h1 {
+}
+.educafe-list {
+}
+.project-details .educafe-list,
+ul li {
   list-style-type: none;
 }
-.home .educafe ul li.completed::before {
+.project .educafe ul li.completed::before {
   content: "✔";
   color: green;
   padding: 0 7px 0 0;
 }
-.home .educafe ul li.not-completed::before {
+.project .educafe ul li.not-completed::before {
   content: "✔";
   color: white;
   padding: 0 7px 0 0;
+}
+.project {
+  margin: 20px;
+}
+.project-details {
+  padding: 20px;
+}
+.treasure {
+  margin: 40px;
+}
+.treasury {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 15px; /* Space between items */
+}
+
+.treasury .col {
+  background-color: #2c3e50; /* Example background color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.treasury .col:nth-child(1) {
+  background-color: #2ecc71;
+  /* Light Green for Lorem Account */
+}
+
+.treasury .col:nth-child(2) {
+  background-color: #3498db;
+  /* Soft Blue for Crypto */
+}
+
+.treasury .col:nth-child(3) {
+  background-color: #f1c40f;
+  /* Light Yellow for Saving Account */
+}
+
+.treasury .col:nth-child(4) {
+  background-color: #e74c3c;
+  /* Coral for Emergency Funding */
+}
+
+.treasury .col:nth-child(5) {
+  background-color: #9b59b6;
+  /* Light Purple for Dividend Account */
+}
+
+.treasury .col:nth-child(6) {
+  background-color: #e67e22;
+  /* Soft Red for Structure Account */
+}
+.treasury .col p {
+  background: inherit;
+}
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.titem {
+  margin: 40px;
+}
+@media (max-width: 768px) {
 }

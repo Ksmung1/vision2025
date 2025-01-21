@@ -7,6 +7,10 @@
   background: black;
   color: white;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .fixed {
   position: fixed;
 }
@@ -15,7 +19,7 @@
   text-align: center;
 }
 .gap {
-  gap: 10px;
+  gap: 15px;
 }
 .flex {
   display: flex;
@@ -23,7 +27,7 @@
 .black {
   color: black;
 }
-.col {
+.colum {
   flex-direction: column;
 }
 .row {
@@ -42,4 +46,11 @@
 
 .ul {
   list-style-type: none;
+}
+.vision {
+  margin: 20px 0;
+}
+svg {
+  width: 300px;
+  height: 300px;
 }
